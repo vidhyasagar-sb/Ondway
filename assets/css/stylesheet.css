@@ -29,6 +29,7 @@ body {
 .commonButton:active {
   color: #00b899;
   background-color: rgba(0, 0, 0, 0);
+  transition: 0.3s;
 }
 
 .commonHeading {
@@ -429,12 +430,8 @@ header .navList a:active {
   margin-bottom: 46px;
 }
 
-.appIcons img:first-child {
+.appIcons a:first-child {
   margin-right: 24px;
-}
-
-.appIconWrapper a {
-  display: inline-block;
 }
 
 .dualPhonesWrapper {
