@@ -26,7 +26,7 @@
           <a class="close" href="#">
             <img src="./assets/images/close.svg" alt="close" />
           </a>
-          <ul>
+          <ul class="navList">
             <li><a href="#">How it works</a></li>
             <li><a href="#">Features</a></li>
             <li><a href="#">Our partners</a></li>
@@ -42,21 +42,30 @@
     </header>
     <section class="banner">
       <h1>
-        Lorem ipsum <span>dolor sit amet,</span> consectetur adipiscing elit
+        Lorem ipsum <span class="webHighlight">dolor sit amet,</span>
+        <span class="resHighlight">consectetur</span> adipiscing elit
       </h1>
       <p>
         We build solutions for the problems we face in life journey and for
         better experience.
       </p>
       <button class="commonButton">Download App</button>
-      <img class="chicken" src="./assets/images/chicken.png" alt="Chicken" />
-      <img
-        class="pizza"
-        src="./assets/images/pizzaSlice.png"
-        alt="Pizza slice"
-      />
-      <img class="tacos" src="./assets/images/tacos.png" alt="Tacos" />
-      <img class="burger" src="./assets/images/burger.png" alt="Burger" />
+      <div class="chickenWrapper">
+        <img class="chicken" src="./assets/images/chicken.png" alt="Chicken" />
+      </div>
+      <div class="pizzaWrapper">
+        <img
+          class="pizza"
+          src="./assets/images/pizzaSlice.png"
+          alt="Pizza slice"
+        />
+      </div>
+      <div class="tacosWrapper">
+        <img class="tacos" src="./assets/images/tacos.png" alt="Tacos" />
+      </div>
+      <div class="burgerWrapper">
+        <img class="burger" src="./assets/images/burger.png" alt="Burger" />
+      </div>
     </section>
     <section class="deliveringCities">
       <p>DELIVERING ALONG 1000+ KMS</p>
@@ -88,12 +97,12 @@
     <section class="working">
       <div class="container">
         <div class="workingHead">
-          <p>HOW IT WORKS</p>
+          <h5 class="commonHeadingSmall">HOW IT WORKS</h5>
           <h3 class="commonHeading">
-            Solve your problems with Our Industry Solutions
+            Solve your problems with <span>Our Industry Solutions</span> 
           </h3>
         </div>
-        <div class="workingCardOne">
+        <div class="workingCard workingCardOne">
           <div class="workingCardDescription">
             <h4>Discover restaurants along 1000+ km verified routes</h4>
             <p>
@@ -101,33 +110,153 @@
               nonummy nibh
             </p>
           </div>
-          <div><img src="./assets/images/phoneCard.png" alt="phone card" /></div>
+          <div class="phoneWrapper">
+            <img src="./assets/images/phoneCard.png" alt="phone card" />
+          </div>
         </div>
-        <div class="workingCardTwo">
-        <div><img src="./assets/images/phoneCard.png" alt="phone card" /></div>
-        <div class="workingCardDescription">
-          <h4>Discover restaurants along 1000+ km verified routes</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh
-          </p>
+        <div class="workingCard workingCardTwo">
+          <div class="phoneWrapper">
+            <img src="./assets/images/phoneCard.png" alt="phone card" />
+          </div>
+          <div class="workingCardDescription">
+            <h4>Discover restaurants along 1000+ km verified routes</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy nibh
+            </p>
+          </div>
+        </div>
+        <div class="workingCard workingCardThree">
+          <div class="workingCardDescription">
+            <h4>Discover restaurants along 1000+ km verified routes</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy nibh
+            </p>
+          </div>
+          <div class="phoneWrapper">
+            <img src="./assets/images/phoneCard.png" alt="phone card" />
+          </div>
         </div>
       </div>
-      <div class="workingCardThree">
-        <div class="workingCardDescription">
-          <h4>Discover restaurants along 1000+ km verified routes</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh
-          </p>
-        </div>
-        <div><img src="./assets/images/phoneCard.png" alt="phone card" /></div>
-      </div>
-      </div>
-    </div>
-        </div>
-        
     </section>
+    <section class="rewards">
+      <div class="container">
+        <h5 class="commonHeadingSmall">FEATURES</h5>
+        <h3 class="commonHeading">
+          Solve your problems with <span>Our Industry Solutions</span>
+        </h3>
+        <div class="rewardDetail">
+          <div class="rewardDetailCard">
+            <img src="./assets/images/paperBag.svg" alt="Paperbag icon" />
+            <h4>Stack rewards.</h4>
+            <p>Choose Restaurant along your selected route</p>
+          </div>
+          <div class="rewardDetailCard">
+            <img src="./assets/images/paperBag.svg" alt="Paperbag icon" />
+            <h4>Stay secure.</h4>
+            <p>Choose Restaurant along your selected route</p>
+          </div>
+          <div class="rewardDetailCard">
+            <img src="./assets/images/paperBag.svg" alt="Paperbag icon" />
+            <h4>Share 35% back.</h4>
+            <p>Choose Restaurant along your selected route</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="partners">
+      <h5 class="commonHeadingSmall">OUR PARTNERS</h5>
+      <h3 class="commonHeading">
+        Restaurants worldwide are already loving Ondway <span class="partnersResponsive"> thanks to</span>
+      </h3>
+      <div class="partnerSlider">
+        <img src="./assets/images/tauras.svg" alt="Tauras logo" />
+        <img src="./assets/images/ondway.svg" alt="Ondway logo" />
+        <img src="./assets/images/random.svg" alt="Random logo" />
+      </div>
+      <div class="joinAsPartner">
+        <a href="#">Become a partner</a>
+        <a href="#"
+          ><img src="./assets/images/rightArrow.svg" alt="right arrow icon"
+        /></a>
+      </div>
+    </section>
+    <section class="downloadApp">
+      <div class="appIcons">
+        <h4>Make journey joyful by visting highway restaurants</h4>
+        <div class="appIconWrapper">
+          <a href="#"><img src="./assets/images/googlePlay.png" alt="Google play logo" /></a>
+          <a href="#"><img src="./assets/images/appStore.png" alt="App store logo" /></a>
+        </div>
+      </div>
+      <div class="dualPhonesWrapper">
+        <img
+        class="dualPhones"
+        src="./assets/images/dualPhones.png"
+        alt="Phone app"
+      />
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+      <div class="footerDetail">
+        <div class="socialMedia">
+          <a href=""><img src="./assets/images/logoFooter.svg" alt="Ondway logo" /></a>
+          <p>Connecting the roads via delicious food</p>
+          <div class="socialMediaLogos">
+            <a href="#"><img src="/assets/images/facebook.svg" alt="facebook logo" /></a>
+            <a href="#"><img src="/assets/images/twitter.svg" alt="twitter logo" /></a>
+            <a href="#"><img src="/assets/images/instagram.svg" alt="instagram logo" /></a>
+            <a href="#"><img src="/assets/images/linkedIn.svg" alt="LinkedIn logo" /></a>
+          </div>
+        </div>
+        <div class="explore">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#">Possibill</a></li>
+            <li><a href="#">Captain Meat</a></li>
+            <li><a href="#">Captain Milk</a></li>
+          </ul>
+        </div>
+        <div class="quickLinks">
+          <h4>Quick links</h4>
+          <ul>
+            <li><a href="#">How it works</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Our Partner</a></li>
+            <li><a href="#">Add Restaurant</a></li>
+          </ul>
+        </div>
+        <div class="contactUs">
+          <h4>Contact Us</h4>
+          <ul>
+            <li>
+              <p>17 Chestnut Street, Millinocket,me, 4462 Karnataka, 411045</p>
+            </li>
+            <li class="contact">
+              <img src="./assets/images/phone.svg" alt="phone icon" />
+              <p>+91-6382956739</p>
+            </li>
+            <li class="contact"> 
+              <img src="./assets/images/email.svg" alt="email id" />
+              <p>company@domainname.com</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="policyWrapper">
+        <a class="visitLinkMobile" href="#"> Visit ONDWAY SOLUTIONS PVT. LTD. &#8599</a>
+        <div class="policies">
+          <p> &#169;2021-2022 All Rights Reserved</p>
+          <ul>
+            <li><a href="#">Privacy Policy</a><span>|</span> </li>
+            <li><a href="#"> Terms & conditions</a> <span>| </span> </li>
+            <li><a class="visitLink" href="#"> Visit ONDWAY SOLUTIONS PVT. LTD. &#8599</a></li>
+          </ul>
+        </div>
+      </div>
+     </div>
+    </footer>
   </body>
 </html>
-
