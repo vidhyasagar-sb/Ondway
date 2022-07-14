@@ -32,13 +32,13 @@ body {
   transition: 0.3s;
 }
 
-.commonHeading {
+.commonHeading h3 {
   font-weight: 700;
   font-size: 40px;
   line-height: 50px;
 }
 
-.commonHeadingSmall {
+.commonHeading h5 {
   color: #7a7a7a;
   font-weight: 500;
   font-size: 16px;
@@ -79,6 +79,13 @@ header .navList a:active {
 .toggle,
 .close {
   display: none;
+}
+
+.downloadNav {
+  list-style: none;
+}
+.downloadNav li {
+  display: inline;
 }
 
 .downloadNav a {
@@ -140,10 +147,6 @@ header .navList a:active {
   position: absolute;
   z-index: -1;
 }
-
-/* .pizzaWrapper {
-  width: 150px;
-} */
 
 .chickenWrapper {
   left: 0;
@@ -246,24 +249,23 @@ header .navList a:active {
   left: 50%;
 }
 
+.workingCard {
+  display: flex;
+  align-items: center;
+}
+
 .workingCardOne,
 .workingCardThree {
-  display: flex;
   gap: 186px;
   justify-content: center;
-  align-items: center;
   background: #effbf8;
   border-radius: 32px;
-  /* flex-wrap: wrap; */
 }
 
 .workingCardTwo {
-  display: flex;
-  align-items: center;
   gap: 190px;
   padding-left: 100px;
   margin: 64px 0;
-  /* flex-wrap: wrap; */
 }
 
 .workingCardDescription h4 {
@@ -285,17 +287,15 @@ header .navList a:active {
 .workingCardOne img,
 .workingCardThree img {
   padding: 72px 125px 0 0;
+  vertical-align: bottom;
 }
 
-.workingCardOne .workingCardDescription {
-  padding: 143px 0 142px 144px;
+.workingCardOne .workingCardDescription,
+.workingCardThree .workingCardDescription {
+  padding-left: 144px;
 }
 .workingCardTwo .workingCardDescription {
   padding: 38px 132px 119px 0;
-}
-
-.workingCardThree .workingCardDescription {
-  padding: 171px 0 114px 144px;
 }
 
 .workingCard h4::before {
@@ -589,6 +589,10 @@ footer h4 {
     bottom: 26px;
     right: 0;
   }
+
+  .rewardDetail {
+    gap: 40px;
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -757,9 +761,13 @@ footer h4 {
     color: #00b899;
   }
 
-  .commonHeading {
+  .commonHeading h3 {
     font-size: 24px;
     line-height: 33.6px;
+  }
+
+  .cityWrapper {
+    gap: 15px;
   }
 
   .cities h3 {
@@ -830,10 +838,6 @@ footer h4 {
 
   .rewards h3 span {
     display: block;
-  }
-
-  .rewardDetail {
-    gap: 40px;
   }
 
   /* Partners */
@@ -910,6 +914,9 @@ footer h4 {
     color: #fff;
     text-decoration: none;
     margin-bottom: 32px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 19.2px;
   }
 
   .visitLinkMobile:hover,
@@ -925,15 +932,5 @@ footer h4 {
   .policies ul {
     flex-direction: column;
     gap: 12px;
-  }
-}
-
-/* For underline */
-@media only screen and (max-width: 333px) {
-  .workingHead h3::after,
-  .rewards h3::after {
-    top: 50%;
-    transform: translate(-50%, 115%);
-    left: 50%;
   }
 }
