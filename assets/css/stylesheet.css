@@ -49,6 +49,13 @@ body {
 
 /* Navbar */
 
+header {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  background-color: #fff;
+}
+
 header nav {
   display: flex;
   align-items: center;
@@ -615,6 +622,8 @@ footer h4 {
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
+    transform: translateX(0);
+    transition: 0.5s;
   }
 
   header.active .downloadNav a {
@@ -623,7 +632,8 @@ footer h4 {
   }
 
   header .navList {
-    display: none;
+    flex-shrink: 0;
+    transform: translateX(-150%);
   }
 
   .toggle {
@@ -727,7 +737,7 @@ footer h4 {
 
 @media only screen and (max-width: 768px) {
   .banner {
-    padding: 86px 0;
+    padding: 142px 0 86px 0;
   }
 
   .banner h1,
@@ -832,7 +842,7 @@ footer h4 {
   }
 
   .rewards h3 span::after {
-    content: url(/assets/images/responsiveUnderline.svg);
+    content: url("../assets/images/responsiveUnderline.svg");
     transform: translate(-42%, 32%);
   }
 
